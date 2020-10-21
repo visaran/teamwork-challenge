@@ -19,7 +19,8 @@
     "vue-class-component": "^7.2.6",
     "vue-router": "^3.4.7",
     "vuetify": "^2.3.14",
-    "vuex": "^3.5.1"
+    "vuex": "^3.5.1",
+    "vuex-persistedstate": "^4.0.0-beta.1"
   },
   "browserslist": [
     "> 1%",

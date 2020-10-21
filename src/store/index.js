@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import createPersistedState from "vuex-persistedstate";
 
 import user from "./modules/user";
 import planet from "./modules/planet";
@@ -15,5 +16,6 @@ export default new Vuex.Store({
     planet,
     dialog
   },
-  strict: debug
+  strict: debug,
+  plugins: [createPersistedState()]
 });
