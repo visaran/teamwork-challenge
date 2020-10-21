@@ -1,33 +1,29 @@
 <template>
   <v-app id="app">
-    <v-card color="grey lighten-4" flat tile>
-      <v-toolbar dense>
-        <v-toolbar-title>Teamwork Front-end Challenge</v-toolbar-title>
+    <the-header />
 
-        <v-spacer></v-spacer>
-
-        <v-btn icon to="/">
-          <v-icon>mdi-home</v-icon>
-        </v-btn>
-
-        <v-btn icon to="/people">
-          <v-icon>mdi-account-multiple</v-icon>
-        </v-btn>
-      </v-toolbar>
-    </v-card>
-
-    <div>
+    <div class="main-content">
       <router-view></router-view>
     </div>
   </v-app>
 </template>
 
 <script>
+import TheHeader from "./components/TheHeader.vue";
 export default {
   data() {
-    return {};
+    return {
+      value: "home"
+    };
+  },
+  components: {
+    TheHeader
   }
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.main-content {
+  padding: 40px 0;
+}
+</style>
