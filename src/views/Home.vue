@@ -1,7 +1,11 @@
 <template>
   <v-container class="px-4 text-center">
-    <h1 class="mb-4">Teamwork Front-end Challenge</h1>
-    <h2>Navigate pages through the bottom navigation</h2>
+    <v-card class="home__card px-8 py-8">
+      <h1>Welcome to Teamwork Front-end challenge</h1>
+      <p>
+        You can navigate through pages from the top bar
+      </p>
+    </v-card>
   </v-container>
 </template>
 
@@ -13,4 +17,15 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.home {
+  &__card {
+    @media (min-width: 992px) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+</style>
