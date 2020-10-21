@@ -10,7 +10,7 @@ const apiClient = axios.create({
 });
 
 export default {
-  getUsers: async () => apiClient.get("/people/"),
-  // getPlanetById: id => apiClient.get(`/planets/${id}`),
+  getUsers: async (page, search) =>
+    apiClient.get(`/people/?page=${page}&search=${search}`),
   getPlanetByUrl: url => axios.get(url)
 };
