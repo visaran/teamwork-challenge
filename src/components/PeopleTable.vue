@@ -61,7 +61,6 @@ export default {
       page: 1,
       search: "",
       isLoading: false,
-      itemsPerPage: 10,
       searchDebounceTimer: null,
       snackbar: false,
       search: "",

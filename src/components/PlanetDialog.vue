@@ -7,20 +7,18 @@
 
       <v-card-text class="py-3">
         <div>
-          <p>
-            <strong>Name:</strong> {{ isLoading ? "loading..." : planet.name }}
-          </p>
+          <p><strong>Name:</strong> {{ planet.name }}</p>
           <p>
             <strong>Diamater:</strong>
-            {{ isLoading ? "loading..." : planet.diameter }}
+            {{ planet.diameter }}
           </p>
           <p>
             <strong>Climate:</strong>
-            {{ isLoading ? "loading..." : planet.climate }}
+            {{ planet.climate }}
           </p>
           <p>
             <strong>Population:</strong>
-            {{ isLoading ? "loading..." : planet.population }}
+            {{ planet.population }}
           </p>
         </div>
       </v-card-text>
@@ -46,8 +44,7 @@ export default {
   computed: {
     ...mapState({
       dialog: state => state.dialog.isOpen,
-      planet: state => state.planet.selectedPlanet,
-      isLoading: state => state.planet.isLoading
+      planet: state => state.planet.selectedPlanet
     })
   },
   methods: {

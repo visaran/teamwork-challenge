@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="pt-8">
+    <v-container>
       <people-table />
     </v-container>
     <planet-dialog />
